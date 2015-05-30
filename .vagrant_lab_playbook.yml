@@ -1,0 +1,6 @@
+# .vagrant_lab_playbook.yml
+---
+- hosts: mongodb-master
+  
+  roles:
+    - ansible-role-mongodb
