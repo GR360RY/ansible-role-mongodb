@@ -14,3 +14,7 @@
 - include: mms-agent.yml
   when: mongodb_mms_api_key != ""
   tags: [mongodb]
+
+- include: vagrant_customisations.yml
+  when: mongodb_vagrant_develop_env is defined and mongodb_vagrant_develop_env == 'yes'
+  tags: [mongodb]

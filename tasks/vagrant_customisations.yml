@@ -1,0 +1,5 @@
+---
+# vagrant_customisations.yml
+
+- name: VAGRANT - Modify vagrant user prompt 
+  template: src=vagrant_.bashrc dest=/home/vagrant/.bashrc owner=vagrant group=vagrant mode=0644

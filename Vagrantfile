@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
 	  }
 	  ansible.playbook = ".vagrant_lab_playbook.yml"
 	  ansible.extra_vars = {
-		vagrant_develop_env: true,
+		mongodb_vagrant_develop_env: 'yes',
 	  }
 	  ansible.sudo = true
 	end
